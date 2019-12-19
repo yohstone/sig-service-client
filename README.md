@@ -1,3 +1,19 @@
+<br>
+
+[部署过程参考](https://steve.blog.csdn.net/article/details/103620668)
+
+<br>
+
+**我对这个开源库的主要修改：**
+ - README.md —— 2.1 依赖部署:
+	- 将  `ln -s /usr/bin/todos /usr/bin/unxi2dos ` 修改为 `sudo ln -s /usr/bin/todos /usr/bin/unix2dos`
+	- 将  `ln -s /usr/bin/fromdos /usr/bin/dos2unix ` 修改为 `sudo ln -s /usr/bin/fromdos /usr/bin/dos2unix`
+- sig-service-client/sig_client/src/main/executive/shell/runSigService.sh:
+	- 添加将环签名字符串 json 格式化的命令
+	- 添加环签名有效性验证的的命令示例
+
+<br>
+
 # 群签名&&环签名客户端操作手册
 
 ## 目录
