@@ -102,7 +102,7 @@
 
 可用如下命令安装这些软件：
 
-```shell
+```bash
 [centos]
 sudo yum -y install git
 sudo yum -y install dos2unix
@@ -112,8 +112,10 @@ sudo yum -y install lsof
 sudo apt install git
 sudo apt install lsof
 sudo apt install tofrodos
-ln -s /usr/bin/todos /usr/bin/unxi2dos
-ln -s /usr/bin/fromdos /usr/bin/dos2unix
+
+
+sudo ln -s /usr/bin/todos /usr/bin/unix2dos
+sudo ln -s /usr/bin/fromdos /usr/bin/dos2unix
 ```
 <br>
 

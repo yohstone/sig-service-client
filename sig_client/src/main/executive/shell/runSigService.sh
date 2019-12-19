@@ -449,6 +449,8 @@ function update_group_sig_data()
 #join_ring "conn.json" "ring1"
 #join_ring "conn.json" "ring1"
 #ring_sig "conn.json" "ring1" "0" "hello" "4"
+#echo '' | sed 's/[[:space:]]//g' | sed 's/\\n//g' | sed 's/,/\\,/g'  # json format tool : delete space and \n , replace ',' with '\,' in the str
+#ring_verify "conn.json" "ring1" '' "hello"
 #1 represents that verify succ
 #deploy_ring_sig "conn.json" "hello" "ring1" "0" "4"
 #eth_ring_verify "conn.json" "0x418d9da6382993e6955135db364c7dba88e483a4"
